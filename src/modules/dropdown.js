@@ -1,10 +1,10 @@
 export const dropdown = function (dropdownTrigger, triggerType="hover", align="left") {
     
+    let dropdownMenu = dropdownTrigger.querySelector(".dropdown-menu");
+
     if (triggerType == "hover") {
         dropdownTrigger.classList.add("dropdown-hover");
     }  else if (triggerType == "click") {
-        let dropdownMenu = dropdownTrigger.querySelector(".dropdown-menu");
-
         dropdownTrigger.addEventListener("click", (e) => {
             e.stopPropagation();
             dropdownTrigger.classList.toggle("dropdown-click");
@@ -16,4 +16,16 @@ export const dropdown = function (dropdownTrigger, triggerType="hover", align="l
             }
         })
     }   
+
+    switch (align) {
+        case "left":
+            dropdownMenu.classList.add("dropdown-menu-left-align");
+            break;
+        case "right":
+            dropdownMenu.classList.add("dropdown-menu-right-align");
+            break;
+        case "center":
+            dropdownMenu.classList.add("dropdown-menu-center-align");
+            break;
+    }
 }

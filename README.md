@@ -8,7 +8,7 @@ To install via npm:
 ```
 
 ## 🛠️ Usage
-To use dropdown-menu, recreate the required HTML structure and apply the provided class names to ensure functionality.
+To use dropdown-menu, recreate the required HTML structure and apply the provided class names to ensure proper functionality. While you can replace the default div elements with other HTML elements, keep in mind that doing so may affect the styling, depending on the element you choose.
 
 **Basic HTML Structure**
 
@@ -39,11 +39,11 @@ Pass the dropdown element and the trigger type ("hover" or "click") as arguments
 ## 🎨 Customizations
 
 ### Dropdown Menu alignment
-By default, the dropdown menu aligns to the left side of the trigger. To change this behavior, you can pass a third argument to setupDropdown() with either "right" or "center" to adjust the alignment.
+By default, the dropdown menu aligns to the left side of the trigger when the content exceeds the dropdown-trigger width. To change this behavior, you can pass a third argument to setupDropdown() with either "right" or "center" to adjust the alignment.
 
 *example*
 
-
+![Screenshot_23](https://github.com/user-attachments/assets/eaf801a0-8834-4710-a2ec-8ad2defa2bbc)
 
 ```bash
     setupDropdown(dropdownElement, "hover", "center")
@@ -51,6 +51,8 @@ By default, the dropdown menu aligns to the left side of the trigger. To change 
 
 *Result:*
 The dropdown menu will now be centered relative to the dropdown trigger.
+![Screenshot_20](https://github.com/user-attachments/assets/fbff620e-af2b-4b37-90ee-4a0888ec5ea8)
+
 
 ### Styling
 You can easily customize the appearance by overriding the default CSS classes:
@@ -59,3 +61,12 @@ You can easily customize the appearance by overriding the default CSS classes:
 - `.dropdown-menu`
 - `.dropdown-item`
 - `.dropdown-item:hover`
+
+**Example**
+
+![image](https://github.com/user-attachments/assets/da772111-4e11-441a-b6c3-9d48a99d9bf7)
+
+
+![image](https://github.com/user-attachments/assets/ec3337f1-5785-49c8-9fc9-d2eabfa989d2)
+
+

@@ -1,4 +1,24 @@
 {
+  "name": "@johnkelly-t/dropdown-menu",
+  "description": "A simple, dependency-free dropdown menu using vanilla JS and CSS. Easily customizable and ready to plug into any web project.",
+  "version": "1.0.0",
+  "author": "John Kelly Temeña",
+  "repository": {
+    "type": "github", 
+    "url": "https://github.com/JohnKelly-T/dropdown-menu"
+  },
+  "main": "src/modules/dropdown.js",
+  "keywords": [
+    "dropdown",
+    "dropdown-menu",
+    "menu",
+    "vanilla",
+    "vanilla-js",
+    "javascript",
+    "css",
+    "customizable"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
     "css-loader": "^7.1.2",

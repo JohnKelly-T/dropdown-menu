@@ -31,7 +31,7 @@
 /* this before element handles the hover for the gap between
 the trigger and the menu to prevent the menu from disappearing
 */
-.dropdown-trigger-hover:hover::before {
+.dropdown-hover:hover::before {
     content: "";
     position: absolute;
     width: 100%;

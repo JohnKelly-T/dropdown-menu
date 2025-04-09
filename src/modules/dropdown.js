@@ -1,6 +1,6 @@
 import "../styles/dropdown.css";
 
-export const setupDropDown = function (dropdownTrigger, triggerType, align="left") {
+export const setupDropdown = function (dropdownTrigger, triggerType, align="left") {
     
     let dropdownMenu = dropdownTrigger.querySelector(".dropdown-menu");
 

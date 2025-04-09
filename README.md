@@ -4,7 +4,7 @@ A lightweight, customizable dropdown component built with plain HTML, CSS, and J
 ## 📦 Installation
 To install via npm:
 ```bash
-    npm install @johnkelly-t/dropdown-menu
+npm install @johnkelly-t/dropdown-menu
 ```
 
 ## 🛠️ Usage
@@ -12,7 +12,7 @@ To use dropdown-menu, recreate the required HTML structure and apply the provide
 
 **Basic HTML Structure**
 
-```bash
+```html
 <div class="dropdown-trigger" id="hover">
   Dropdown
   <div class="dropdown-menu">
@@ -25,15 +25,15 @@ To use dropdown-menu, recreate the required HTML structure and apply the provide
 
 **Javascript**
 Import the setupDropdown function to initialize the dropdown in your project:
-```bash
-    import { setupDropdown } from "@johnkelly-t/dropdown-menu"
+```javascript
+import { setupDropdown } from "@johnkelly-t/dropdown-menu"
 ```
 
 Pass the dropdown element and the trigger type ("hover" or "click") as arguments to activate the dropdown. Use "hover" for hover-triggered dropdowns, or "click" for click-triggered dropdowns.
-```bash
-    let dropdownElement = document.querySelector(".dropdown");
+```javascript
+let dropdownElement = document.querySelector(".dropdown");
     
-    setupDropdown(dropdownElement, "hover");
+setupDropdown(dropdownElement, "hover");
 ```
 
 ## 🎨 Customizations
@@ -45,8 +45,8 @@ By default, the dropdown menu aligns to the left side of the trigger when the co
 
 ![Screenshot_23](https://github.com/user-attachments/assets/eaf801a0-8834-4710-a2ec-8ad2defa2bbc)
 
-```bash
-    setupDropdown(dropdownElement, "hover", "center")
+```javascript
+setupDropdown(dropdownElement, "hover", "center")
 ```
 
 *Result:*
@@ -63,9 +63,25 @@ You can easily customize the appearance by overriding the default CSS classes:
 - `.dropdown-item:hover`
 
 **Example**
+```css
+.dropdown-trigger {
+    color: rgb(8, 89, 143);
+}
 
-![image](https://github.com/user-attachments/assets/da772111-4e11-441a-b6c3-9d48a99d9bf7)
+.dropdown-menu {
+    border: 1px solid #5f5f5;
+    padding: 2px;
+}
 
+.dropdown-item {
+    border-radius: 3px;
+    color: #555;
+}
+
+.dropdown-item:hover {
+    background: #acd4e8;
+}
+```
 
 ![image](https://github.com/user-attachments/assets/ec3337f1-5785-49c8-9fc9-d2eabfa989d2)
 
